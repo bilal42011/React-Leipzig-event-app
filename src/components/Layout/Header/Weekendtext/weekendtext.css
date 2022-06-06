@@ -1,0 +1,10 @@
+.weekendtextwrapper {
+    padding-top:25px;
+    width:70%;
+    margin:auto;
+    text-align: center;
+}
+html,body,#root{
+    margin:0;
+    padding:0;
+}
