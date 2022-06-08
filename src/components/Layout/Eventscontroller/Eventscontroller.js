@@ -3,7 +3,6 @@ import { useState } from "react";
 import Tabs from "./Tabs/Tabs";
 import Eventsrendrer from "./Eventsrendrer/Eventsrendrer";
 import WeatherSwitches from "./WeatherSwitches/WeatherSwitches";
-import {Divider} from "@mui/material";
 
 const Eventscontroller=(props)=>{
 
@@ -60,6 +59,8 @@ events={loadedclubdata}
  
  <WeatherSwitches visibility={visibility} setvisibility={setvisibility} />
  </div>
+ 
+
 }
 
 export default Eventscontroller;

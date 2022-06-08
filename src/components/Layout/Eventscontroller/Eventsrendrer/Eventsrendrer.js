@@ -11,7 +11,7 @@ let {clubstatus,clubloaded,favouriteevents,setfavouriteevents,events,mjutdata,if
     let render=null;
     if(clubstatus){
 render= <Stack sx={{ width: '90%',borderRadius:"1%", minHeight:"20vh",margin:"auto",marginTop:"2%", color: 'gray'
-,backgroundColor:"purple",border:"1px solid purple",padding:"2%",paddingTop:"5%"}} spacing={5}>
+,backgroundColor:"#563C5C",border:"1px solid purple",padding:"2%",paddingTop:"5%"}} spacing={5}>
       <LinearProgress  color="primary"/>
       <LinearProgress color="success" />
       <LinearProgress color="inherit"/>
@@ -48,7 +48,7 @@ else{
           gutterBottom 
           sx={{margin:"auto",marginBottom:"3%",width:"30%",paddingBottom:"0.6%"
           ,borderBottom:"2px solid white",paddingTop:"2%"}}>Favourite Events</Typography>
-<Favouriteevents events={favouriteevents} favouriteevents={favouriteevents} setfavouriteevents={setfavouriteevents}></Favouriteevents>
+<Favouriteevents favouriteevents={favouriteevents}></Favouriteevents>
         </div>
         </>
 }

@@ -13,6 +13,7 @@ return <Clubevent
  weekday={event.weekday}
  artists={event.artists}
  id={event.id} 
+ location={event.location}
  eventtype="simple"
  addlistner={true}
  key={event.id}/>

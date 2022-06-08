@@ -7,7 +7,7 @@ import {Card , CardHeader, CardContent, Grid, Button,Typography,
 
 const Clubevent=(props)=>{
 
-let {date,time,weekday,title,artists,id,events,favouriteevents,setfavouriteevents,
+let {date,time,weekday,title,artists,id,location,events,favouriteevents,setfavouriteevents,
     eventtype,addlistner}=props;
 console.log(setfavouriteevents,favouriteevents,events,id);
 let subtitle="Date"+", "+ date+"  |  Doors:"+ time;
@@ -65,7 +65,7 @@ action={<Button onClick={()=>favouritelistener(id,events,favouriteevents,setfavo
     {artistlist}
 </CardContent>
 <CardActions>
-<LocationOn></LocationOn><span style={{paddingLeft:"1%"}}>mjut</span>
+<LocationOn></LocationOn><span style={{paddingLeft:"1%"}}>{location}</span>
 </CardActions>
 </Card>
     </Grid>

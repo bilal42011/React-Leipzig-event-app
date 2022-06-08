@@ -37,6 +37,8 @@ if(clubloaded==currentclub){
 else if(currentclubloading==currentclub){
 setcurrentclubloading(null);
 setclubstatus(false);
+setclubloaded(null);
+setloadedclubdata(null);
 }
 else{
 if(currentclubdata==null){
