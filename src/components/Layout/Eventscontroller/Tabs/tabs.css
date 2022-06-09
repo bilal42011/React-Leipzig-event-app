@@ -1,6 +1,4 @@
-.tabswrapper{
-
-display: flex;
-justify-content: center;
-
+.tabswrapper {
+  display: flex;
+  justify-content: center;
 }

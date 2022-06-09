@@ -1,27 +1,74 @@
 import React from "react";
-import { Typography,FormGroup,Grid} from "@mui/material";
+import { Typography, FormGroup, Grid } from "@mui/material";
 import Switchitem from "./Switchitem/Switchitem";
 
-const Switchlist=(props)=>{
-
-return <div style={{marginTop:"5%"}}>
-    <Typography fontWeight="700" fontSize="2.5rem" textAlign="center" fontFamily="Helvetica" 
-    sx={{margin:"auto",paddingBottom:"0.3%"
-    ,color:"white",width:"30%"}}>Select Your Favourite Clubs</Typography>
-<Grid container  alignContent="center" justifyContent="center" direction="column">
-    <Grid item xs={12} sm={12} md={5} lg={6} xl={6} 
-    sx={{border:"1px solid black"
-    ,padding:"6%",marginTop:"2%",backgroundColor:"#301934"
-    ,color:"white",borderRadius:"5%"}}>
-    <FormGroup>
-<Switchitem name="Mjut" currentclub={1} {...props} />
-<Switchitem name="Ifz" currentclub={2} {...props} />
-<Switchitem name="Distillery" currentclub={3} {...props} />
-<Switchitem name="Neuewelt" currentclub={4} {...props} />
-    </FormGroup>
-    </Grid>
-</Grid>
-</div>
-}
+const Switchlist = (props) => {
+  return (
+    <div style={{ marginTop: "8%" }}>
+      <Typography
+        fontSize="2.6rem"
+        textAlign="center"
+        fontFamily="Oswalo"
+        sx={{
+          margin: "auto",
+          paddingBottom: "0.3%",
+          marginBottom: "3%",
+          color: "white",
+          width: "30%",
+        }}
+      >
+        Select Your Favourite Clubs
+      </Typography>
+      <FormGroup>
+        <Grid
+          container
+          justifyContent="center"
+          rowSpacing={4}
+          sx={{
+            padding: "6%",
+            width: "80%",
+            marginTop: "2%",
+            backgroundColor: "#301934",
+            alignText: "center",
+            color: "white",
+            borderRadius: "1.4%",
+            margin: "auto",
+            minHeight: "250px",
+            alignContent: "center",
+          }}
+        >
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            md={2}
+            lg={2}
+            xl={2}
+            sx={{ marginRight: "2%" }}
+          >
+            <Switchitem name="Mjut" currentclub={1} {...props} />
+          </Grid>
+          <Grid item xs={12} sm={5} md={2} lg={2} xl={2}>
+            <Switchitem name="Ifz" currentclub={2} {...props} />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            md={2}
+            lg={2}
+            xl={2}
+            sx={{ marginRight: "50px" }}
+          >
+            <Switchitem name="Distillery" currentclub={3} {...props} />
+          </Grid>
+          <Grid item xs={12} sm={5} md={2} lg={2} xl={2}>
+            <Switchitem name="Neuewelt" currentclub={4} {...props} />
+          </Grid>
+        </Grid>
+      </FormGroup>
+    </div>
+  );
+};
 
 export default Switchlist;

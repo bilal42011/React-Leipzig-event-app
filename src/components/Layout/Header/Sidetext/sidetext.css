@@ -1,12 +1,17 @@
-.sidetextwrapper{
-    position: absolute;
-    background-color:black;
-    width: 169px;
-    padding: 2em 1em;
-    left: -51px;
-    top: 41px;
-    transform: rotate(-90deg);
-    text-align: center;
-    height: -moz-fit-content;
-    height: fit-content;
+.sidetextwrapper {
+  position: absolute;
+  background-color: #371b58;
+  width: 169px;
+  padding: 2em 1em;
+  left: -51px;
+  top: 41px;
+  transform: rotate(-90deg);
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 800px) and (min-width: 0px) {
+  .sidetextwrapper {
+    display: none;
+  }
 }

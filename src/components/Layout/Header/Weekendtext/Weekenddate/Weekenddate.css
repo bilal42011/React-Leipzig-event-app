@@ -1,0 +1,17 @@
+.weekenddatewrapper {
+  color: orange;
+  font-family: "Oswalo";
+  font-size: 3rem;
+  text-align: center;
+  margin-top: -5%;
+}
+@media screen and (max-width: 1001px) and (min-width: 551px) {
+  .weekenddatewrapper {
+    margin-top: -8%;
+  }
+}
+@media screen and (max-width: 402px) and (min-width: 0px) {
+  .weekenddatewrapper {
+    font-size: 2rem;
+  }
+}
