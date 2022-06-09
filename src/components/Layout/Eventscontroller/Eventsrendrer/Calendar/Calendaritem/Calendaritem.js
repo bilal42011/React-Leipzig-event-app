@@ -13,13 +13,13 @@ const Calendaritem = (props) => {
           bgcolor: "#3E065F",
           color: "white",
           marginBottom: "2px",
-          width: "38px",
-          height: "38px",
+          width: "45px",
+          height: "45px",
           borderRadius: "13%",
         }}
         variant="square"
       >
-        <Typography fontFamily="Oswald" fontSize="1rem" variant="subtitle2">
+        <Typography fontFamily="Oswald" fontSize="1.3rem" variant="subtitle2">
           mju
         </Typography>
       </Avatar>
@@ -31,13 +31,13 @@ const Calendaritem = (props) => {
           bgcolor: "#7D1E6A",
           color: "white",
           marginBottom: "2px",
-          width: "38px",
-          height: "38px",
+          width: "45px",
+          height: "45px",
           borderRadius: "13%",
         }}
         variant="square"
       >
-        <Typography fontFamily="Oswald" fontSize="1rem" variant="subtitle2">
+        <Typography fontFamily="Oswald" fontSize="1.3rem" variant="subtitle2">
           ifz
         </Typography>
       </Avatar>
@@ -49,13 +49,13 @@ const Calendaritem = (props) => {
           bgcolor: "#700B97",
           color: "white",
           marginBottom: "2px",
-          width: "38px",
-          height: "38px",
+          width: "45px",
+          height: "45px",
           borderRadius: "13%",
         }}
         variant="square"
       >
-        <Typography variant="subtitle2" fontSize="1rem" fontFamily="Oswald">
+        <Typography variant="subtitle2" fontSize="1.3rem" fontFamily="Oswald">
           dis
         </Typography>
       </Avatar>
@@ -67,13 +67,13 @@ const Calendaritem = (props) => {
           bgcolor: "#8E05C2",
           color: "white",
           marginBottom: "2px",
-          width: "38px",
-          height: "38px",
+          width: "45",
+          height: "45px",
           borderRadius: "13%",
         }}
         variant="square"
       >
-        <Typography variant="subtitle2" fontSize="1rem" fontFamily="Oswald">
+        <Typography variant="subtitle2" fontSize="1.4rem" fontFamily="Oswald">
           neu
         </Typography>
       </Avatar>
@@ -81,7 +81,16 @@ const Calendaritem = (props) => {
 
   let items = icons.map((icon, index) => {
     return (
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} key={index}>
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+        xl={12}
+        key={index}
+        sx={{ marginBottom: "20px" }}
+      >
         {icon}
       </Grid>
     );
@@ -98,7 +107,15 @@ const Calendaritem = (props) => {
       lg={4}
       xl={4}
     >
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        md={12}
+        lg={12}
+        xl={12}
+        sx={{ marginBottom: "20px" }}
+      >
         <Typography variant="subtitle1" fontFamily="Oswald" gutterBottom>
           <span
             style={{
@@ -106,7 +123,7 @@ const Calendaritem = (props) => {
               padding: "6px",
               color: "white",
               borderRadius: "13%",
-              fontSize: "1.2rem",
+              fontSize: "1.4rem",
             }}
           >
             {day}

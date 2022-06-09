@@ -43,16 +43,19 @@ const Eventrendrer = (props) => {
     );
   } else if (!clubloaded) {
     render = (
-      <Typography
-        color="white"
-        fontFamily="Oswald"
-        fontSize="1.8rem"
-        width="40%"
-        margin="auto"
-        textAlign="center"
-      >
-        Choose Club To See Current Weekend Events
-      </Typography>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{}}>
+        <Typography
+          color="white"
+          fontFamily="Oswald"
+          fontSize="1.8rem"
+          width="40%"
+          margin="auto"
+          textAlign="center"
+          marginBottom="10%"
+        >
+          Choose Club To See Current Weekend Events
+        </Typography>
+      </Grid>
     );
   } else {
     console.log(events);

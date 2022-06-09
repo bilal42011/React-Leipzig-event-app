@@ -36,7 +36,7 @@ const Calendar = (props) => {
       <Link to="/allevents" target="_blank" style={{ textDecoration: "none" }}>
         <Typography
           color="white"
-          fontSize="1.8rem"
+          fontSize="2rem"
           fontFamily="Oswald"
           textAlign="center"
           gutterBottom
